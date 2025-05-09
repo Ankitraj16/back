@@ -28,6 +28,7 @@ const App = () => {
           <Route path="/Studentlogin" element={<LoginPage role="Student" />} />
           <Route path="/Teacherlogin" element={<LoginPage role="Teacher" />} />
           <Route path="/Adminregister" element={<AdminRegisterPage />} />
+    <Route path="/Homepage" element={<Homepage/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       ) : currentRole === "Admin" ? (
